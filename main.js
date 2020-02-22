@@ -65,7 +65,7 @@ const clickHandler = function(event) {
 
     //get rid of directions
     const directions = document.querySelector('#directions');
-    directions.innerHTML = '<p>Computer Choosing...</p><img src="arrowR.png" alt="arrow">';
+    directions.innerHTML = '<p>Computer Choosing...</p><img src="images/arrowR.png" alt="arrow">';
     // need to get number 0-2 to make a computerChoices
     let computerChoice = Math.floor(Math.random() * 3);
     console.log(computerChoice);
@@ -79,12 +79,12 @@ const clickHandler = function(event) {
     //plug the random number 0-2 into the array index for each choice and run else if statements to check them against possible userInputs.
     const decider = function() {
         //make variables to keep the user choice's background blue after selection
-        const blueRock = '<button type="button" id="btn1" name="rock"><img src="rock L.png" alt="rock" style="background-color: blue;" style="color: blue;"></button>';
-        const bluePaper = '<button type="button" id="btn2" name="paper"><img src="paper n.png" alt="paper" style="background-color: blue;" style="color: blue;"></button>';
-        const blueScissor = '<button type="button" id="btn3" name="scissors"><img src="scissor OJ R.png" alt="scissors" style="background-color: blue;" style="color: blue;"></button>';
+        const blueRock = '<button type="button" id="btn1" name="rock"><img src="images/rock L.png" alt="rock" style="background-color: blue;" style="color: blue;"></button>';
+        const bluePaper = '<button type="button" id="btn2" name="paper"><img src="images/paper n.png" alt="paper" style="background-color: blue;" style="color: blue;"></button>';
+        const blueScissor = '<button type="button" id="btn3" name="scissors"><img src="images/scissor OJ R.png" alt="scissors" style="background-color: blue;" style="color: blue;"></button>';
 
         if (computerChoices[computerChoice] === 'rock') {
-            img1.innerHTML = '<button type="button" style="background-color: red;" style="color: red;"><img src="rock L.png"  alt="rock"></button>';
+            img1.innerHTML = '<button type="button" style="background-color: red;" style="color: red;"><img src="images/rock L.png"  alt="rock"></button>';
             setTimeout(function() {
                 directions.innerHTML = 'The Computer Choices rock!'
                 if (userInput === 'rock') {
@@ -100,7 +100,7 @@ const clickHandler = function(event) {
             }, 1000);
         }
         if (computerChoices[computerChoice] === 'paper') {
-            img2.innerHTML = '<button type="button"  style="background-color: red;" style="color: red;"><img src="paper n.png" alt="paper"></button>';
+            img2.innerHTML = '<button type="button"  style="background-color: red;" style="color: red;"><img src="images/paper n.png" alt="paper"></button>';
             setTimeout(function() {
                 directions.innerHTML = 'The Computer Choices paper!'
                 if (userInput === 'rock') {
@@ -116,7 +116,7 @@ const clickHandler = function(event) {
             }, 1000);
         }
         if (computerChoices[computerChoice] === 'scissors') {
-            img3.innerHTML = '<button type="button"  style="background-color: red;" style="color: red;"><img src="scissor OJ R.png" alt="scissors"></button>';
+            img3.innerHTML = '<button type="button"  style="background-color: red;" style="color: red;"><img src="images/scissor OJ R.png" alt="scissors"></button>';
             setTimeout(function() {
                 directions.innerHTML = 'The Computer Choices scissors!'
                 if (userInput === 'rock') {
