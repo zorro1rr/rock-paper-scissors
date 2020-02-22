@@ -21,8 +21,8 @@ html, body {
 
 h1{
   text-align: center;
-  padding-left: 30px;
-
+  padding-left: 35px;
+	margin-right: -10px;
 }
 .container1{
   display: flex;
@@ -78,9 +78,20 @@ height: 32%;
 display: flex;
 justify-content: space-between;
 flex-direction: column;
+background-color: transparent;
 }
 .container3 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.btn {
+	background-color: transparent;
+	border: 0;
+}
+
+.com {
+	background-color: transparent;
+	border: 0;
 }
