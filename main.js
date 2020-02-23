@@ -86,7 +86,7 @@ const clickHandler = function(event) {
         if (computerChoices[computerChoice] === 'rock') {
             img1.innerHTML = '<button type="button" style="background-color: red;" style="color: red;"><img src="images/rock L.png"  alt="rock"></button>';
             setTimeout(function() {
-                directions.innerHTML = 'The Computer Choices rock!'
+                directions.innerHTML = 'The Computer chooses rock!'
                 if (userInput === 'rock') {
                     btn1.outerHTML = blueRock;
                     tieHandler();
@@ -99,10 +99,10 @@ const clickHandler = function(event) {
                 }
             }, 1000);
         }
-        if (computerChoices[computerChoice] === 'paper') {
+        if (computerchooses[computerChoice] === 'paper') {
             img2.innerHTML = '<button type="button"  style="background-color: red;" style="color: red;"><img src="images/paper n.png" alt="paper"></button>';
             setTimeout(function() {
-                directions.innerHTML = 'The Computer Choices paper!'
+                directions.innerHTML = 'The Computer chooses paper!'
                 if (userInput === 'rock') {
                     btn1.outerHTML = blueRock;
                     lossHandler();
@@ -118,7 +118,7 @@ const clickHandler = function(event) {
         if (computerChoices[computerChoice] === 'scissors') {
             img3.innerHTML = '<button type="button"  style="background-color: red;" style="color: red;"><img src="images/scissor OJ R.png" alt="scissors"></button>';
             setTimeout(function() {
-                directions.innerHTML = 'The Computer Choices scissors!'
+                directions.innerHTML = 'The Computer chooses scissors!'
                 if (userInput === 'rock') {
                     btn1.outerHTML = blueRock;
                     winHandler();
