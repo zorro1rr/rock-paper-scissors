@@ -99,7 +99,7 @@ const clickHandler = function(event) {
                 }
             }, 1000);
         }
-        if (computerchooses[computerChoice] === 'paper') {
+        if (computerChoices[computerChoice] === 'paper') {
             img2.innerHTML = '<button type="button"  style="background-color: red;" style="color: red;"><img src="images/paper n.png" alt="paper"></button>';
             setTimeout(function() {
                 directions.innerHTML = 'The Computer chooses paper!'
