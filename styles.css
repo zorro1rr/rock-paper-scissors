@@ -1,11 +1,12 @@
 * {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-		/* outline: 1px solid hotpink; */
-		}
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid hotpink; */
+}
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -14,50 +15,46 @@ html, body {
   max-height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url('images/rock-paper-scissors.svg');
-  background-size:100% 100%;
+  background-image: url("images/rock-paper-scissors.svg");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-    }
-
-h1{
-  text-align: center;
-  padding-left: 35px;
-	margin-right: -10px;
 }
-.container1{
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+.container1 {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   height: 100%;
+  align-items: center;
 }
-#btn1{
-height: 32%;
+#btn1 {
+  height: 32%;
 }
 #btn1:hover {
-    background-color: blue;
-    color: blue;
-  }
-#btn2{
-height: 32%;
+  background-color: blue;
+  color: blue;
+}
+#btn2 {
+  height: 32%;
 }
 #btn2:hover {
-    background-color: blue;
-    color: blue;
-  }
-#btn3{
-height: 32%;
+  background-color: blue;
+  color: blue;
+}
+#btn3 {
+  height: 32%;
 }
 #btn3:hover {
-    background-color: blue;
-    color: blue;
-  }
-#img1 {
-  height: 32%;
+  background-color: blue;
+  color: blue;
 }
-#img2 {
+img {
   height: 32%;
-}
-#img3 {
-  height: 32%;
+  padding: 4rem 0;
 }
 
 #text-container {
@@ -66,7 +63,7 @@ height: 32%;
   justify-content: space-between;
 }
 
-#directions{
+#directions {
   display: flex;
   height: 10%;
   margin-bottom: 70%;
@@ -75,10 +72,10 @@ height: 32%;
 }
 
 .container2 {
-display: flex;
-justify-content: space-between;
-flex-direction: column;
-background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: transparent;
 }
 .container3 {
   display: flex;
@@ -87,11 +84,16 @@ background-color: transparent;
 }
 
 .btn {
-	background-color: transparent;
-	border: 0;
+  background-color: transparent;
+  border: 0;
 }
 
 .com {
-	background-color: transparent;
-	border: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+p {
+  font-size: 14pt;
+  font-weight: 600;
 }
